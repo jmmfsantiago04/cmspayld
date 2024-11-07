@@ -9,7 +9,7 @@ import { buildConfig } from 'payload/config'
 import Users from './collections/Users'
 import Gallery from './collections/Gallery'
 import Media from './collections/Media'
-import Post from './collections/Post'
+import BlogPost from './collections/BlogPost'
 
 export default buildConfig({
   admin: {
@@ -21,7 +21,7 @@ export default buildConfig({
   [Users,
    Gallery,
    Media,
-   Post
+   BlogPost
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
